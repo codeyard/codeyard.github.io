@@ -1,0 +1,21 @@
+{
+    "short_name": "codeyard",
+    "name": "Raphael Gerber • codeyard",
+    "description": "Raphael Gerber's Personal Website",
+    "icons": [
+        {
+            "src": "/assets/favicon/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/favicon/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "theme_color": "#1d1e1f",
+    "background_color": "#1d1e1f",
+    "start_url": "https://codeyard.ch/",
+    "display": "standalone"
+}
