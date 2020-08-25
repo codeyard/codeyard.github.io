@@ -71,10 +71,16 @@ body {
 header {
     display: grid;
     grid-gap: var(--line-height);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     margin-bottom: var(--line-height);
     line-height: var(--line-height);
     padding-top: var(--line-height);
+}
+
+@media (min-width: 1000px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 nav a {
@@ -121,7 +127,7 @@ a.logo:hover svg * {
 
 @media (min-width: 1000px) {
     article {
-        margin-left: 50%;
+        margin-right: 50%;
     }
 }
 
@@ -132,20 +138,17 @@ Footer
 footer {
     display: grid;
     grid-gap: var(--line-height);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     line-height: var(--line-height);
     padding-top: calc(2 * var(--line-height));
     padding-bottom: var(--line-height);
 }
 
-footer>div:first-child, footer>div:last-child {
-    grid-column: 1 / span 2;
-}
-
-@media (min-width: 1000px) {
-    footer { grid-template-columns: repeat(4, 1fr); }
-    footer div:last-child { grid-column-start: 3; }
-}
+/*@media (min-width: 1000px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}*/
 
 a.back-to-top {
     color: var(--color-social);
